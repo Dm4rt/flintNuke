@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FNR Staff Portal Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="logo-wrap">
+    <img src="assets/logo.png" alt="Flintstones Nuclear Research logo" class="logo" />
+    <div>
+      <h1>FNR Staff Portal</h1>
+      <p class="tagline">Authorized Bedrock Personnel Only</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="login.html" class="nav-link active">Staff Portal</a>
+  </nav>
+</header>
+
+<main class="login-main">
+  <section class="login-card">
+    <h2>Staff Login</h2>
+    <p class="muted">
+      This portal is used by FNR personnel to access internal reactor logs and range schedules.
+    </p>
+
+    <form id="login-form">
+      <label for="username">Username</label>
+      <input id="username" name="username" autocomplete="off" required />
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required />
+
+      <button type="submit">Log in</button>
+    </form>
+
+    <p id="login-message" class="login-message"></p>
+
+    <details class="muted training-note">
+      <summary>Training hint</summary>
+      <p>
+        This page simulates a classic login bug where unsafe string concatenation is used in a
+        database query. Try experimenting with suspicious input patterns to see how the
+        <strong>simulated</strong> system responds.
+      </p>
+    </details>
+
+    <!-- Fake developer comment as an OSINT / code-review clue -->
+    <!-- TODO: Replace quick prototype query:
+         SELECT * FROM users WHERE username = '$USER' AND password = '$PASS';
+         with parameterized statement before going live. -->
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Flintstones Nuclear Research – Bedrock Island Facility.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

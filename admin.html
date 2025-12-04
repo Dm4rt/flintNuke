@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FNR Secure Admin Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo-wrap">
+    <img src="assets/logo.png" class="logo" />
+    <div>
+      <h1>FNR Secure Admin Portal</h1>
+      <p class="tagline">Restricted Access • Bedrock Island Facility</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="staff.html" class="nav-link">Staff Directory</a>
+    <a href="#" onclick="logout(); return false;" class="nav-link">Logout</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Welcome, Authorized Personnel</h2>
+  <p class="muted">
+    The following materials are classified. Unauthorized distribution is prohibited.
+  </p>
+
+  <section class="cards">
+    <article class="card">
+      <h3>📡 Coastal Radar Logs</h3>
+      <p>
+        Access real-time tracking data from Bedrock Island radar installations monitoring the Kish Sector.
+      </p>
+      <p>
+        <a href="admin-radar.html" style="color: var(--accent); font-weight: 600;">View Radar Logs →</a>
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>🚨 Security Incident Reports</h3>
+      <p>
+        Review active and archived security incidents requiring investigation.
+      </p>
+      <p>
+        <a href="admin-incidents.html" style="color: var(--accent); font-weight: 600;">View Incidents →</a>
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>🛰️ Classified Satellite Imagery</h3>
+      <p>
+        Access overhead surveillance data from intelligence partners.
+      </p>
+      <p>
+        <a href="admin-imagery.html" style="color: var(--accent); font-weight: 600;">View Imagery →</a>
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>📝 Internal Notes & Credentials</h3>
+      <p>
+        Development notes and temporary credentials. Not for public distribution.
+      </p>
+      <p>
+        <a href="admin-notes.html" style="color: var(--accent); font-weight: 600;">View Notes →</a>
+      </p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 FNR Secure Portal — Classified Material.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

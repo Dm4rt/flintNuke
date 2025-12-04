@@ -248,3 +248,12 @@ button[type="submit"]:hover {
     gap: 0.5rem;
   }
 }
+/* Staff directory images */
+.staff-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FNR Admin — Radar Logs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo-wrap">
+    <img src="assets/logo.png" class="logo" />
+    <div>
+      <h1>FNR Secure Admin Portal</h1>
+      <p class="tagline">Restricted Access • Bedrock Island Facility</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="staff.html" class="nav-link">Staff Directory</a>
+    <a href="#" onclick="logout(); return false;" class="nav-link">Logout</a>
+  </nav>
+</header>
+
+<main>
+  <div style="margin-bottom: 2rem;">
+    <a href="admin.html" class="nav-link">← Back to Admin Dashboard</a>
+  </div>
+  
+  <h2>Coastal Radar Logs — Kish Sector</h2>
+  <p class="muted">
+    Real-time tracking data from Bedrock Island radar installations.
+  </p>
+
+  <section class="card">
+    <h3>Recent Radar Activity</h3>
+    <pre class="muted" style="white-space: pre-wrap;">
+[2025-01-12 03:14:22] TRACK-447: Unknown vessel pinged 11 km W of Kish Island.
+[2025-01-12 03:26:55] TRACK-452: Low-altitude object entered radar shadow near SE ridge.
+[2025-01-12 04:01:13] TRACK-461: Repeated interference spikes consistent with spoofing.
+[2025-01-12 04:19:02] TRACK-472: Object lost. Possible surface-submersible transition.
+    </pre>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 FNR Secure Portal — Classified Material.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

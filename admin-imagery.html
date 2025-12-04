@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FNR Admin — Satellite Imagery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo-wrap">
+    <img src="assets/logo.png" class="logo" />
+    <div>
+      <h1>FNR Secure Admin Portal</h1>
+      <p class="tagline">Restricted Access • Bedrock Island Facility</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="staff.html" class="nav-link">Staff Directory</a>
+    <a href="#" onclick="logout(); return false;" class="nav-link">Logout</a>
+  </nav>
+</header>
+
+<main>
+  <div style="margin-bottom: 2rem;">
+    <a href="admin.html" class="nav-link">← Back to Admin Dashboard</a>
+  </div>
+  
+  <h2>Classified Satellite Imagery</h2>
+  <p class="muted">
+    Overhead surveillance data from intelligence partners.
+  </p>
+
+  <section class="card">
+    <h3>Bedrock Island Compound</h3>
+    <p class="muted">Imagery auto-redacted due to sensitivity.</p>
+    <img src="assets/classified_blur.png" 
+         alt="Redacted Satellite Imagery"
+         style="width:100%;border-radius:12px;border:1px solid var(--border);opacity:0.7;">
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 FNR Secure Portal — Classified Material.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FNR Admin — Internal Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo-wrap">
+    <img src="assets/logo.png" class="logo" />
+    <div>
+      <h1>FNR Secure Admin Portal</h1>
+      <p class="tagline">Restricted Access • Bedrock Island Facility</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="staff.html" class="nav-link">Staff Directory</a>
+    <a href="#" onclick="logout(); return false;" class="nav-link">Logout</a>
+  </nav>
+</header>
+
+<main>
+  <div style="margin-bottom: 2rem;">
+    <a href="admin.html" class="nav-link">← Back to Admin Dashboard</a>
+  </div>
+  
+  <h2>Internal Notes & Credentials</h2>
+  <p class="muted">
+    Development notes and temporary credentials. Not for public distribution.
+  </p>
+
+  <section class="card">
+    <h3>Developer Memo</h3>
+    <p class="muted">Developer memo (not meant to be public):</p>
+    <pre class="muted" style="white-space: pre-wrap;">
+TODO: Move Outlook sandbox credentials to secure config.
+TEMP credentials for testing:
+Email: fred.flintstone@flintstones-nuclear.com
+Password: Bedrock!2024
+    </pre>
+    <!-- Hidden hint for OSINT students -->
+    <!-- RESEARCHER-ARCHIVE /home/fred/old_backup/emails_2023.zip -->
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 FNR Secure Portal — Classified Material.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
